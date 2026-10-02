@@ -1,0 +1,13 @@
+@import './modules/foundation.css';
+@import './modules/home.css';
+@import './modules/study.css';
+@import './modules/advisory.css';
+@import './modules/services.css';
+@import './modules/universities.css';
+@import './modules/company.css';
+@import './modules/map.css';
+@import './modules/type-layout.css';
+@import './modules/navigation-widgets.css';
+@import './modules/page-media.css';
+@import './modules/page-transitions.css';
+@import './modules/public-theme.css';

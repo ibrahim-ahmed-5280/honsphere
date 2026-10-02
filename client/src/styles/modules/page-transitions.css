@@ -1,0 +1,7 @@
+@view-transition { navigation: auto; }
+.hc-page-enter > :first-child h1 { animation: hc-page-enter .28s cubic-bezier(.22, 1, .36, 1); }
+@keyframes hc-page-enter { from { transform: translateY(8px); } to { transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  .hc-page-enter > :first-child h1 { animation: none; }
+}

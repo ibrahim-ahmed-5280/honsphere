@@ -1,0 +1,82 @@
+/* Corporate profile: purpose, values and accountable delivery. */
+.company-principles{background:var(--blue-soft)}
+.company-principles-head{margin-bottom:32px}
+.company-principles-head .section-title{max-width:22ch}
+.company-direction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.company-direction-card{display:flex;min-height:290px;flex-direction:column;align-items:flex-start;padding:clamp(25px,3vw,38px);border-radius:14px;background:var(--navy);color:#fff;text-align:left}
+.company-direction-card:nth-child(2){background:var(--blue)}
+.company-card-label{color:var(--blue);font-size:.69rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
+.company-direction-card .company-card-label{color:#cfe8f2}
+.company-direction-card h3{max-width:24ch;margin:30px 0 12px;color:#fff;font-size:clamp(1.4rem,2.45vw,1.9rem);line-height:1.2}
+.company-direction-card p{max-width:62ch;color:#e2edf2;font-size:.91rem;line-height:1.75}
+.company-values-head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin:62px 0 24px}
+.company-values-head .eyebrow{margin-bottom:9px}
+.company-values-head h3{font-size:clamp(1.6rem,2.7vw,2.2rem)}
+.company-values-head>p{max-width:42ch;font-size:.9rem;line-height:1.7}
+.company-values-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:0;padding:0;border-top:1px solid #c8dce5;list-style:none;text-align:left}
+.company-values-grid li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:13px;min-height:128px;padding:23px 19px 20px 0;border-bottom:1px solid #c8dce5}
+.company-values-grid li>span{color:var(--blue);font-size:.68rem;font-weight:850}
+.company-values-grid h4{margin-bottom:7px;font-size:1.02rem;line-height:1.3}
+.company-values-grid p{font-size:.81rem;line-height:1.6}
+.company-leadership-layout{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:start;gap:clamp(38px,6vw,88px)}
+.company-leadership-intro .section-title{max-width:18ch}
+.company-leadership-intro>.body-large{margin-top:22px}
+.company-location{margin-top:35px;padding-top:22px;border-top:1px solid var(--line)}
+.company-location>span{display:block;margin-bottom:7px;color:var(--blue);font-size:.69rem;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
+.company-location strong{display:block;color:var(--navy);font-size:1.06rem}
+.company-location p{max-width:60ch;margin-top:10px;font-size:.87rem;line-height:1.7}
+.company-leadership-detail{padding:30px;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 16px 36px rgba(11,46,89,.055);text-align:left}
+.company-director{display:grid;grid-template-columns:62px minmax(0,1fr);align-items:center;gap:15px;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.company-director-mark{display:grid;width:62px;height:62px;place-items:center;border-radius:11px;background:var(--blue-soft);color:var(--navy);font-size:1.1rem;font-weight:850}
+.company-director h3{margin:5px 0 3px;font-size:1.45rem}
+.company-director p,.company-network p,.company-responsibility p{font-size:.86rem;line-height:1.7}
+.company-network,.company-responsibility{padding-top:25px}
+.company-network{padding-bottom:25px;border-bottom:1px solid var(--line)}
+.company-network p,.company-responsibility p{margin-top:9px}
+
+/* Student support: a readable, six-stage path without imagery. */
+.student-pathway{background:#fff}
+.student-pathway-layout{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);align-items:start;gap:clamp(45px,7vw,100px)}
+.student-pathway-intro{position:sticky;top:120px}
+.student-pathway-intro .section-title{max-width:18ch}
+.student-pathway-intro>.body-large{margin-top:22px}
+.student-pathway-note{display:flex;align-items:flex-start;gap:11px;margin-top:28px;padding:18px;border-left:3px solid var(--gold);background:var(--blue-soft)}
+.student-pathway-note .material-symbols-outlined{margin-top:1px;color:var(--blue);font-size:20px}
+.student-pathway-note p{font-size:.82rem;line-height:1.65}
+.student-pathway-list{position:relative;display:grid;margin:0;padding:0;list-style:none}
+.student-pathway-list:before{position:absolute;top:26px;bottom:42px;left:25px;width:2px;background:linear-gradient(180deg,var(--navy),var(--blue) 73%,var(--gold));content:""}
+.student-pathway-list li{position:relative;display:grid;grid-template-columns:52px minmax(0,1fr);gap:20px;padding-bottom:25px}
+.student-pathway-list li:last-child{padding-bottom:0}
+.student-pathway-list li:last-child:after{position:absolute;top:26px;bottom:0;left:25px;width:2px;background:#fff;content:""}
+.student-pathway-list li>div{padding:0 0 24px;border-bottom:1px solid var(--line)}
+.student-pathway-list li:last-child>div{padding-bottom:0;border-bottom:0}
+.student-pathway-number{z-index:1;display:grid;width:52px;height:52px;place-items:center;border:4px solid #fff;border-radius:50%;background:var(--navy);color:#fff;font-size:.75rem;font-weight:850}
+.student-pathway-list li:nth-child(n+4) .student-pathway-number{background:var(--blue)}
+.student-pathway-list li:last-child .student-pathway-number{background:var(--gold);color:var(--navy)}
+.student-pathway-phase{display:block;margin:1px 0 5px;color:var(--blue);font-size:.67rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
+.student-pathway-list h3{font-size:1.16rem;line-height:1.3}
+.student-pathway-list p{max-width:55ch;margin-top:7px;font-size:.87rem;line-height:1.7}
+@media(max-width:900px){
+  .company-direction-card{min-height:330px}
+  .company-values-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .company-leadership-layout,.student-pathway-layout{grid-template-columns:1fr;gap:40px}
+  .student-pathway-intro{position:static}
+  .student-pathway-intro .section-title{max-width:25ch}
+}
+@media(max-width:600px){
+  .company-direction-grid,.company-values-grid{grid-template-columns:1fr}
+  .company-direction-card{min-height:0;padding:25px}
+  .company-direction-card h3{margin-top:24px}
+  .company-values-head{display:block;margin-top:45px;text-align:left}
+  .company-values-head>p{margin-top:15px}
+  .company-values-grid li{min-height:0;padding:19px 0}
+  .company-leadership-detail{padding:22px}
+  .company-leadership-intro{text-align:left}
+  .student-pathway-intro{text-align:center}
+  .student-pathway-intro .section-title{margin-inline:auto}
+  .student-pathway-note{text-align:left}
+  .student-pathway-list{text-align:left}
+  .student-pathway-list li{gap:15px}
+}
+
+

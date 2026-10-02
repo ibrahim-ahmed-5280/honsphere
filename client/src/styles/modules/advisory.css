@@ -1,0 +1,34 @@
+/* Consulting page: a text-led capability diagram and connected delivery timeline. */
+.capacity-visual{min-height:380px;display:flex;flex-direction:column;justify-content:space-between;padding:27px 30px;border:1px solid #d6e5e5;border-radius:16px;background:linear-gradient(145deg,#edf6f4,#e4f0ef);color:var(--navy)}
+.capacity-visual-head{display:flex;align-items:center;justify-content:space-between;gap:14px;color:#216f8a;font-size:.67rem;font-weight:700;letter-spacing:.12em}
+.capacity-visual-head .material-symbols-outlined{width:42px;height:42px;display:grid;place-items:center;border-radius:11px;background:#fff;color:var(--blue);font-size:23px}
+.capacity-practice{margin:25px 0}
+.capacity-practice>div{display:grid;grid-template-columns:38px 90px minmax(0,1fr);align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid #cfdfdf}
+.capacity-practice>div:first-child{border-top:1px solid #cfdfdf}
+.capacity-practice>div>span{color:#648393;font-size:.72rem;font-variant-numeric:tabular-nums}
+.capacity-practice strong{color:var(--navy);font-size:1.08rem;font-weight:650}
+.capacity-practice small{color:#587181;font-size:.81rem;line-height:1.45}
+.capacity-visual-outcome{display:flex;align-items:center;gap:9px;padding-top:15px;border-top:1px solid #cfdfdf;color:#25495f;font-size:.88rem;font-weight:600}
+.capacity-visual-outcome .material-symbols-outlined{color:#16806c;font-size:19px}
+.delivery-steps{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:0;padding:0;list-style:none}
+.delivery-steps:before{position:absolute;top:20px;right:7%;left:7%;height:1px;background:#b9d3d9;content:""}
+.delivery-step{position:relative;min-width:0;display:grid;grid-template-rows:42px auto 1fr;align-content:start;padding:0 22px 0 0;background:transparent}
+.delivery-index{position:relative;z-index:1;width:42px;height:42px;display:grid;place-items:center;border:1px solid #9bc8d0;border-radius:50%;background:var(--paper);color:#116982;font-size:.77rem;font-weight:700;font-variant-numeric:tabular-nums}
+.delivery-step h3{margin:17px 0 7px;font-size:1rem;font-weight:650;letter-spacing:-.02em}
+.delivery-step p{max-width:27ch;color:#5b7182;font-size:.83rem;line-height:1.65}
+@media(max-width:900px){
+  .delivery-steps{grid-template-columns:1fr;gap:20px}
+  .delivery-steps:before{top:19px;bottom:20px;left:20px;width:1px;height:auto}
+  .delivery-step{grid-template-columns:42px minmax(0,1fr);grid-template-rows:auto auto;column-gap:16px;padding:0}
+  .delivery-index{grid-column:1;grid-row:1 / span 2}
+  .delivery-step h3{grid-column:2;margin:2px 0 5px}
+  .delivery-step p{grid-column:2;max-width:60ch}
+}
+@media(max-width:600px){
+  .capacity-visual{min-height:320px;padding:22px 20px;border-radius:13px}
+  .capacity-practice>div{grid-template-columns:30px 72px minmax(0,1fr);gap:9px;padding:15px 0}
+  .capacity-practice small{font-size:.75rem}
+  .delivery-steps{gap:17px}
+}
+
+

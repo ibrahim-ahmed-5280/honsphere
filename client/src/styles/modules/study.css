@@ -1,0 +1,131 @@
+/* Student university filters: readable labels and stable tablet/phone columns. */
+.field{min-width:0}
+.field label{text-align:left}
+.filter-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.search-footer{justify-content:flex-end}
+.search-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-left:auto}
+.search-actions .filter-reset{margin-right:auto}
+@media(max-width:900px){.filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){
+  body[data-page=education] .section .hs-container{text-align:left}
+  body[data-page=education] .intro-grid{text-align:left;justify-items:start}
+  body[data-page=education] .intro-grid>*{width:100%;text-align:left}
+  .search-panel{width:100%;padding:16px}
+  .filter-grid{grid-template-columns:1fr;gap:13px}
+  .field label{margin-bottom:6px;font-size:.78rem;text-align:left}
+  .field select{min-width:0;min-height:46px;padding-inline:10px;font-size:.85rem}
+  .search-footer{margin-top:16px}
+  .search-actions{display:grid;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-left:0}
+  .search-actions .filter-reset{margin-right:0}
+  .search-actions .btn{width:100%;min-width:0;min-height:46px;padding:8px 5px;font-size:.82rem;white-space:nowrap}
+  .result-head{align-items:flex-start;text-align:left}
+}
+@media(max-width:360px){.search-actions .btn{font-size:.74rem;gap:4px}.search-actions .btn .material-symbols-outlined{font-size:16px}}
+/* Selected experience is an editorial list, distinct from the photo-led service cards. */
+.hc-work-grid{grid-template-columns:1fr;gap:0;border-top:1px solid var(--line)}
+.hc-work-grid article.hc-work-item{display:grid;grid-template-columns:58px minmax(0,1fr) 48px;align-items:center;gap:18px;min-height:0;padding:22px 16px;border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;transition:background .2s}
+.hc-work-grid article.hc-work-item:hover{transform:none;background:#f7f9f8;box-shadow:none}
+.hc-work-number{align-self:start;padding-top:3px;color:#678092;font-size:.78rem;font-weight:600;font-variant-numeric:tabular-nums}
+.hc-work-grid .hc-work-copy{display:block;min-width:0;padding:0}
+.hc-work-copy small{font-size:.68rem;letter-spacing:.12em}
+.hc-work-copy h3{margin:5px 0 4px;font-size:1.2rem}
+.hc-work-copy p{max-width:72ch;font-size:.9rem;line-height:1.65}
+.hc-work-link{display:grid;width:42px;height:42px;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--blue);transition:background .18s,border-color .18s,color .18s,transform .18s}
+.hc-work-link .material-symbols-outlined{font-size:20px}
+.hc-work-item:hover .hc-work-link{transform:translate(2px,-2px);border-color:var(--navy);background:var(--navy);color:#fff}
+@media(max-width:600px){
+  .hc-work-grid article.hc-work-item{grid-template-columns:34px minmax(0,1fr) 34px;gap:10px;padding:19px 4px}
+  .hc-work-number{font-size:.72rem}
+  .hc-work-copy h3{font-size:1.05rem}
+  .hc-work-copy p{font-size:.86rem}
+  .hc-work-link{width:34px;height:34px}
+}
+@media(prefers-reduced-motion:reduce){.hc-work-link{transition:none}}
+body[data-page=contact] .page-hero:after{background-position:center top}
+body[data-page=insights] .page-hero:after{background-position:center top}
+@media(max-width:600px){
+  .quote-band .hs-container{align-items:center;gap:20px;text-align:center}
+  .quote-band .hs-container>div{width:100%;text-align:center}
+  .quote-band h2{max-width:18ch;margin-inline:auto;font-size:clamp(1.65rem,7.5vw,2rem);line-height:1.15}
+  .quote-band .btn{align-self:center;min-height:46px;margin:0}
+}
+/* Keep section headings balanced across every page; hero h1 titles remain prominent. */
+body[data-page] main h2{margin-block-start:.75rem;font-size:2.25rem;line-height:1.2;letter-spacing:-.035em}
+body[data-page] main .result-head h2{margin-block-start:0}
+@media(max-width:600px){
+  body[data-page] main h2{font-size:1.875rem;line-height:1.2;letter-spacing:-.035em}
+  body[data-page] main .result-head h2{margin-block-start:0}
+}
+
+/* University results: clear identity, readable facts and direct official links. */
+.university-card{min-height:330px;gap:0;padding:24px;border-color:#d9e4e8;border-radius:14px;box-shadow:0 8px 24px rgba(12,43,74,.035)}
+.university-card:hover{transform:translateY(-2px);border-color:#a8c3cd;box-shadow:0 14px 30px rgba(12,43,74,.09)}
+.uni-top{align-items:center}
+.uni-logo-link{position:relative;width:64px;height:64px;display:grid;place-items:center;overflow:hidden;border:1px solid #e1e9ec;border-radius:12px;background:#fff;transition:border-color .18s,box-shadow .18s}
+.uni-logo-link:hover{border-color:#9bbcc6;box-shadow:0 0 0 3px rgba(52,174,204,.12)}
+.uni-logo-img{width:48px;height:48px;object-fit:contain}
+.uni-logo-fallback{width:100%;height:100%;place-items:center;background:#eff5f6;color:var(--navy);font-size:.9rem;font-weight:700;letter-spacing:.02em}
+.uni-logo-fallback:not([hidden]){display:grid}
+.uni-type{padding:6px 10px;border:1px solid #d9e9e3;border-radius:999px;background:#f0f7f3;color:#28634f;font-size:.7rem;font-weight:600}
+.university-card h3{margin:20px 0 4px;font-size:1.15rem;font-weight:650;line-height:1.35;letter-spacing:-.025em}
+.university-card h3 a{display:inline-flex;align-items:baseline;gap:7px}
+.university-card h3 a:hover{color:var(--blue)}
+.university-card h3 .material-symbols-outlined{color:#648093;font-size:16px;vertical-align:middle}
+.university-card .location{align-items:center;color:#5a7183;font-size:.86rem}
+.uni-tags{gap:7px;margin:16px 0 20px}
+.uni-tags span{padding:6px 9px;border:1px solid #e3ebed;border-radius:6px;background:#f5f8f8;color:#40596b;font-size:.73rem}
+.uni-fee{align-items:flex-end;margin-top:auto;padding-top:16px}
+.uni-fee span{max-width:12ch;color:#687d8d;font-size:.76rem;line-height:1.4}
+.uni-fee strong{color:var(--navy);font-size:1.15rem;font-weight:650}
+.university-card .text-link{margin-top:17px;font-size:.9rem}
+.university-card .text-link:focus-visible,.uni-logo-link:focus-visible,.university-card h3 a:focus-visible{outline:3px solid #36a9c6;outline-offset:3px}
+@media(max-width:600px){
+  .university-card{min-height:0;padding:20px}
+  .uni-fee{align-items:baseline;flex-direction:row;justify-content:space-between}
+  .uni-fee span{max-width:none}
+}
+
+/* Universities page: market connection visual and audience specific routes. */
+.market-visual{position:relative;isolation:isolate;min-height:390px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;padding:27px 30px;border:1px solid rgba(150,193,206,.25);border-radius:18px;background:radial-gradient(ellipse at 77% 22%,rgba(55,191,213,.2),transparent 36%),linear-gradient(140deg,#0b3154 0%,#092644 72%,#0c385c 100%);color:#fff;box-shadow:0 18px 42px rgba(9,38,68,.12)}
+.market-visual:before{position:absolute;z-index:-1;inset:0;background-image:linear-gradient(rgba(207,235,239,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(207,235,239,.045) 1px,transparent 1px);background-size:36px 36px;mask-image:linear-gradient(120deg,transparent 7%,#000 100%);content:""}
+.market-visual-head{display:flex;justify-content:space-between;gap:16px;color:#c5e3e9;font-size:.62rem;font-weight:650;letter-spacing:.12em}
+.market-visual-head span:last-child{color:#8fadb9;font-size:.57rem;text-align:right}
+.market-route{display:block;width:100%;height:auto;overflow:visible;margin:8px 0 0}
+.market-route-track{fill:none;stroke:rgba(200,225,231,.23);stroke-width:2;stroke-dasharray:2 10;stroke-linecap:round}
+.market-route-line{fill:none;stroke:url(#market-route-line);stroke-width:3;stroke-dasharray:3 8;stroke-linecap:round}
+.market-route-halo{fill:rgba(240,180,76,.16);stroke:rgba(240,180,76,.42);stroke-width:1.5}
+.market-route-halo-end{fill:rgba(82,208,229,.14);stroke:rgba(82,208,229,.42)}
+.market-route-start{fill:#f0b44c}.market-route-end{fill:#52d0e5}
+.market-visual-stops{display:grid;grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr);align-items:center;gap:14px;margin-top:-6px}
+.market-visual-stops>div:last-child{text-align:right}
+.market-visual-stops>div>span,.market-visual-stops small{display:block;color:#a9c6d0;font-size:.62rem;font-weight:650;letter-spacing:.1em}
+.market-visual-stops strong{display:block;margin:5px 0 3px;color:#fff;font-size:1.12rem;font-weight:600;letter-spacing:-.02em}
+.market-visual-stops small{color:#89a9b7;font-size:.67rem;font-weight:400;letter-spacing:.025em}
+.market-route-arrow{color:#d5e6e9;font-size:20px}
+.market-copy .body-large{max-width:52ch;color:#50697b;font-size:1rem;line-height:1.75}
+.market-audiences{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:25px}
+.market-audiences>a{min-width:0;display:grid;grid-template-columns:34px minmax(0,1fr) 18px;align-items:center;gap:10px;padding:14px 12px;border:1px solid #dbe6e8;border-radius:10px;background:rgba(255,255,255,.65);transition:background .18s,border-color .18s,transform .18s}
+.market-audiences>a:hover{transform:translateY(-2px);border-color:#a8c8cf;background:#fff}
+.market-audiences>a>.material-symbols-outlined:first-child{color:var(--blue);font-size:21px}
+.market-audiences strong,.market-audiences small{display:block}
+.market-audiences strong{color:var(--navy);font-size:.84rem;font-weight:650}
+.market-audiences small{margin-top:3px;color:#5f7585;font-size:.72rem;line-height:1.4}
+.market-audience-arrow{color:#688391;font-size:16px;transition:transform .18s}
+.market-audiences>a:hover .market-audience-arrow{transform:translate(2px,-2px);color:var(--blue)}
+.market-audiences>a:focus-visible{outline:3px solid #36a9c6;outline-offset:3px}
+@media(max-width:900px){.market-audiences{grid-template-columns:1fr}}
+@media(max-width:600px){
+  .market-visual{min-height:290px;padding:22px 20px;border-radius:14px}
+  .market-visual-head{font-size:.57rem}
+  .market-visual-head span:last-child{max-width:16ch;font-size:.52rem}
+  .market-route{margin:0}
+  .market-visual-stops{grid-template-columns:minmax(0,1fr) 26px minmax(0,1fr);gap:8px}
+  .market-visual-stops strong{font-size:.98rem}
+  .market-visual-stops>div>span,.market-visual-stops small{font-size:.57rem}
+  .market-copy{text-align:center}
+  .market-copy .eyebrow{justify-content:center}
+  .market-copy .section-title,.market-copy .body-large{margin-inline:auto}
+  .market-audiences{text-align:left}
+}
+
+

@@ -1,0 +1,121 @@
+[
+  {
+    "slug": "apu",
+    "name": "Asia Pacific University",
+    "city": "Kuala Lumpur",
+    "type": "Private",
+    "website": "https://www.apu.edu.my/",
+    "levels": [
+      "Foundation",
+      "Diploma",
+      "Bachelor's",
+      "Master's"
+    ],
+    "fields": [
+      "Computer Science",
+      "Business",
+      "Engineering"
+    ]
+  },
+  {
+    "slug": "upm",
+    "name": "Universiti Putra Malaysia",
+    "city": "Selangor",
+    "type": "Public",
+    "website": "https://upm.edu.my/",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "Public Health",
+      "Health Sciences",
+      "Business"
+    ]
+  },
+  {
+    "slug": "unikl",
+    "name": "Universiti Kuala Lumpur",
+    "city": "Kuala Lumpur",
+    "type": "Private",
+    "website": "https://www.unikl.edu.my/",
+    "levels": [
+      "Diploma",
+      "Bachelor's",
+      "Master's"
+    ],
+    "fields": [
+      "Engineering",
+      "Business",
+      "Computer Science"
+    ]
+  },
+  {
+    "slug": "mahsa",
+    "name": "MAHSA University",
+    "city": "Selangor",
+    "type": "Private",
+    "website": "https://mahsa.edu.my/",
+    "levels": [
+      "Foundation",
+      "Diploma",
+      "Bachelor's"
+    ],
+    "fields": [
+      "Health Sciences",
+      "Public Health"
+    ]
+  },
+  {
+    "slug": "city-u",
+    "name": "City University Malaysia",
+    "city": "Selangor",
+    "type": "Private",
+    "website": "https://city.edu.my/",
+    "levels": [
+      "Diploma",
+      "Bachelor's",
+      "Master's"
+    ],
+    "fields": [
+      "Business",
+      "Engineering"
+    ]
+  },
+  {
+    "slug": "msu",
+    "name": "Management & Science University",
+    "city": "Selangor",
+    "type": "Private",
+    "website": "https://www.msu.edu.my/",
+    "levels": [
+      "Foundation",
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "Business",
+      "Health Sciences",
+      "Computer Science"
+    ]
+  },
+  {
+    "slug": "uniten",
+    "name": "Universiti Tenaga Nasional",
+    "city": "Putrajaya",
+    "type": "Private",
+    "website": "https://www.uniten.edu.my/",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "Engineering",
+      "Computer Science",
+      "Business"
+    ]
+  }
+]

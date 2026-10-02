@@ -1,0 +1,41 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "tw-animate-css";
+
+@theme inline {
+  --color-background: var(--admin-background);
+  --color-foreground: var(--admin-foreground);
+  --color-card: var(--admin-card);
+  --color-card-foreground: var(--admin-foreground);
+  --color-popover: var(--admin-card);
+  --color-popover-foreground: var(--admin-foreground);
+  --color-primary: var(--admin-primary);
+  --color-primary-foreground: #ffffff;
+  --color-secondary: var(--admin-secondary);
+  --color-secondary-foreground: var(--admin-primary);
+  --color-muted: var(--admin-muted);
+  --color-muted-foreground: var(--admin-muted-foreground);
+  --color-accent: var(--admin-accent);
+  --color-accent-foreground: var(--admin-primary);
+  --color-destructive: #aa3434;
+  --color-border: var(--admin-border);
+  --color-input: var(--admin-border);
+  --color-ring: #1672b3;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.75rem;
+}
+
+body.admin-body {
+  --admin-background: #f5f8fa;
+  --admin-foreground: #112c4d;
+  --admin-card: #ffffff;
+  --admin-primary: #0b2e59;
+  --admin-secondary: #eaf3f8;
+  --admin-muted: #f2f6f8;
+  --admin-muted-foreground: #52677c;
+  --admin-accent: #f0ae39;
+  --admin-border: #d8e3ea;
+}

@@ -1,0 +1,4 @@
+/* Uploaded hero backgrounds override the built-in artwork for that page. */
+body .page-hero[style*="--page-hero-image"]::after {
+  background-image: var(--page-hero-image);
+}

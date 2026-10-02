@@ -1,0 +1,60 @@
+.cms-topbar-actions{display:flex;align-items:center;gap:16px;margin-left:auto}
+.cms-brand-hint{margin:5px 0 18px;font-size:13px;line-height:1.5}
+.cms-topbar .theme-toggle{color:#0b2e59}
+.cms-topbar .theme-toggle:hover{color:#1768a9}
+body.admin-body .cms-menu-button,
+body.admin-body .cms-menu-button:hover,
+body.admin-body .cms-menu-button[data-state=open]{width:48px;height:48px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#0b2e59}
+body.admin-body .cms-menu-button:hover{color:#1768a9}
+body.admin-body .cms-menu-button svg{width:27px;height:27px}
+body.admin-body .cms-login{position:relative}
+body.admin-body .cms-login-theme-toggle{position:absolute;top:13px;right:13px;width:42px;height:42px;color:#0b2e59}
+@media(max-width:460px){.cms-topbar-actions{gap:6px}.cms-topbar-title{gap:6px}.cms-topbar-title>span{overflow:hidden;text-overflow:ellipsis}.cms-site-link{width:42px;justify-content:center}}
+
+html[data-theme=dark] body.admin-body{
+  --admin-background:#071d35;--admin-foreground:#e8f4fa;--admin-card:#0b2e59;
+  --admin-primary:#1768a9;--admin-secondary:#123f70;--admin-muted:#123f70;
+  --admin-muted-foreground:#b4d1e2;--admin-accent:#edaa3b;--admin-border:#285478;
+  --color-ring:#39bce8;
+  background:#071d35;color:#e8f4fa;
+}
+html[data-theme=dark] body.admin-body p{color:#b4d1e2}
+html[data-theme=dark] body.admin-body :is(h1,h2,h3,h4){color:#f2f9fc}
+html[data-theme=dark] body.admin-body :is(.cms-sidebar,.cms-topbar,.cms-mobile-sheet){background:#092744!important;border-color:#285478}
+html[data-theme=dark] body.admin-body :is(.cms-brand,.cms-account,.cms-panel-heading,.cms-action-row,.cms-recent-list a,.cms-listing-toolbar,.cms-table-head,.cms-table-row,.cms-university-table th,.cms-university-table td,.cms-inbox-list,.cms-inbox-item,.cms-inbox-count,.cms-inbox-detail-head,.cms-inbox-contact,.cms-inbox-status,.cms-preview-bar,.cms-tabs,.cms-footer-group,.cms-team-list>div,.cms-metric,.cms-university-modal-heading,.cms-university-modal-actions){border-color:#285478}
+html[data-theme=dark] body.admin-body :is(.cms-sidebar nav a,.cms-mobile-sheet nav a,.cms-account strong,.cms-topbar-title strong,.cms-row-primary strong,.cms-university-table tbody th,.cms-action-row strong,.cms-recent-list strong,.cms-inbox-item-top strong,.cms-inbox-subject){color:#e8f4fa}
+html[data-theme=dark] body.admin-body :is(.cms-topbar-title,.cms-account small,.cms-row-primary small,.cms-action-row small,.cms-recent-list small,.cms-university-table tbody td,.cms-university-slug,.cms-row-date,.cms-metric small,.cms-panel-empty,.cms-list-empty,.cms-inbox-preview,.cms-inbox-contact,.cms-inbox-item-top small){color:#b4d1e2}
+html[data-theme=dark] body.admin-body :is(.cms-site-link,.cms-panel-heading>a,.cms-inbox-contact a,.cms-text-button,.cms-university-edit,.cms-kicker){color:#66cef1}
+html[data-theme=dark] body.admin-body :is(.cms-sidebar nav a:hover,.cms-sidebar nav a.active,.cms-mobile-sheet nav a:hover,.cms-mobile-sheet nav a.active,.cms-section-list button:hover,.cms-section-list button.active){background:#123f70;color:#fff}
+html[data-theme=dark] body.admin-body :is(.cms-card,.cms-page-meta,.cms-editor-controls,.cms-preview-panel,.cms-list,.cms-empty,.cms-metrics,.cms-panel,.cms-listing,.cms-inbox,.cms-login,.cms-university-modal,.cms-inbox-item,.cms-university-modal-heading,.cms-university-modal-actions){background:#0b2e59;border-color:#285478;color:#e8f4fa}
+html[data-theme=dark] body.admin-body :is(.cms-card h2,.cms-section-toolbar h2,.cms-panel-heading h2,.cms-page-editor-head h1,.cms-university-modal-heading h2,.cms-inbox-detail-head h2,.cms-inbox-placeholder h2,.cms-login h1,.cms-metric-number,.cms-metric strong){color:#f2f9fc}
+html[data-theme=dark] body.admin-body :is(.cms-metric:hover,.cms-action-row:hover,.cms-recent-list a:hover,.cms-table-row:hover,.cms-university-table tbody tr:hover,.cms-inbox-item:hover){background:#123f70}
+html[data-theme=dark] body.admin-body :is(.cms-metric-icon,.cms-action-icon,.cms-row-icon,.cms-account-avatar,.cms-image-dropzone-art){background:#164b80;border-color:#37668a;color:#75d2f0}
+html[data-theme=dark] body.admin-body :is(.cms-filter-group,.cms-table-head,.cms-university-table thead,.cms-inbox-item.active,.cms-inquiry-message,.cms-university-modal-scroll){background:#092744;color:#d8eaf2}
+html[data-theme=dark] body.admin-body .cms-filter-group button{color:#b4d1e2}
+html[data-theme=dark] body.admin-body .cms-filter-group button.active{background:#1768a9;color:#fff;box-shadow:none}
+html[data-theme=dark] body.admin-body :is(.cms-image-dropzone,.cms-image-fields,.cms-inbox-toolbar,.cms-preview-bar,.cms-publication-card){background:#092744;border-color:#285478}
+html[data-theme=dark] body.admin-body :is(.cms-image-dropzone:hover,.cms-image-dropzone.is-dragging){background:#123f70;border-color:#39bce8}
+html[data-theme=dark] body.admin-body :is(.cms-upload-field-title,.cms-image-dropzone-copy strong,.cms-form-page label,.cms-page-meta label,.cms-field-list label,.cms-login label,.cms-inbox-status label,.cms-publication-heading h2){color:#d8eaf2}
+html[data-theme=dark] body.admin-body :is(.cms-form-page input:not([type=checkbox]):not([type=file]),.cms-form-page textarea,.cms-form-page select,.cms-page-meta input:not([type=checkbox]),.cms-page-meta textarea,.cms-field-list input,.cms-field-list textarea,.cms-html-editor textarea,.cms-inquiry-head select,.cms-page-editor-head select,.cms-inbox-status select,.cms-login input,.cms-search input){background:#092744;border-color:#37668a;color:#f2f9fc}
+html[data-theme=dark] body.admin-body :is(input,textarea)::placeholder{color:#9dbdd1}
+html[data-theme=dark] body.admin-body .cms-login-wrap{background:#071d35}
+html[data-theme=dark] body.admin-body .cms-login input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px #092744 inset;-webkit-text-fill-color:#f2f9fc;caret-color:#f2f9fc}
+html[data-theme=dark] body.admin-body .cms-password-toggle,
+html[data-theme=dark] body.admin-body .cms-login-theme-toggle,
+html[data-theme=dark] body.admin-body .cms-topbar .theme-toggle,
+html[data-theme=dark] body.admin-body .cms-menu-button,
+html[data-theme=dark] body.admin-body .cms-menu-button:hover,
+html[data-theme=dark] body.admin-body .cms-menu-button[data-state=open]{color:#e8f4fa}
+html[data-theme=dark] body.admin-body :is(.cms-password-toggle:hover,.cms-login-theme-toggle:hover,.cms-topbar .theme-toggle:hover,.cms-menu-button:hover){color:#66cef1}
+html[data-theme=dark] body.admin-body :is(.cms-section-toolbar button,.cms-preview-bar button,.cms-tabs button,.cms-team-list button,.cms-university-edit,.cms-university-modal-close,[data-slot=button][data-variant=outline]){background:#123f70;border-color:#37668a;color:#e8f4fa}
+html[data-theme=dark] body.admin-body :is(.cms-section-toolbar button:hover,.cms-preview-bar button:hover,.cms-tabs button:hover,.cms-team-list button:hover,.cms-university-edit:hover){background:#164b80;color:#fff}
+html[data-theme=dark] body.admin-body :is(.cms-preview-bar button.active,.cms-tabs button.active,.cms-primary,[data-slot=button][data-variant=default]){background:#1768a9;color:#fff}
+html[data-theme=dark] body.admin-body :is(.cms-primary:hover,[data-slot=button][data-variant=default]:hover){background:#2185bc}
+html[data-theme=dark] body.admin-body :is(.cms-badge-live,.cms-badge-ready,[data-slot=badge][data-variant=secondary]){background:#164b80!important;border-color:#37668a!important;color:#d8f4fc!important}
+html[data-theme=dark] body.admin-body .cms-badge-draft{background:#3c331f!important;border-color:#a57932!important;color:#ffd894!important}
+html[data-theme=dark] body.admin-body .cms-inbox-message p{color:#e8f4fa!important}
+html[data-theme=dark] body.admin-body .cms-confirm-dialog{background:#0b2e59!important;border-color:#37668a!important;color:#e8f4fa}
+html[data-theme=dark] body.admin-body .cms-confirm-dialog [data-slot=alert-dialog-title]{color:#f2f9fc}
+html[data-theme=dark] body.admin-body .cms-confirm-dialog [data-slot=alert-dialog-description]{color:#b4d1e2}
+html[data-theme=dark] body.admin-body .cms-confirm-dialog [data-slot=button][data-variant=outline]{background:#123f70;border-color:#37668a;color:#e8f4fa}

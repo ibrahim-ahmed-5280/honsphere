@@ -1,0 +1,115 @@
+{
+  "key": "main",
+  "brandName": "HornSphere Consulting",
+  "logoPath": "/brand/HS Logo-13.png",
+  "darkLogoPath": "",
+  "iconPath": "/brand/icon logo.png",
+  "tagline": "Consulting for a Brighter Africa.",
+  "footerIntro": "Research-led advisory, capacity development and international student recruitment from Mogadishu.",
+  "address": "Hodan District, Mogadishu, Somalia",
+  "email": "office@hornsphere.com",
+  "phoneDisplay": "+252 61 4809010",
+  "phoneE164": "+252614809010",
+  "whatsappPhone": "252614809010",
+  "whatsappGreeting": "Salaam! Welcome to HornSphere. Tell us what you need help with.",
+  "whatsappSubtitle": "How can we help?",
+  "headerCtaLabel": "Start a conversation",
+  "headerCtaHref": "/contact.html#contact-form",
+  "navLinks": [
+    {
+      "label": "Home",
+      "href": "/index.html"
+    },
+    {
+      "label": "About",
+      "href": "/about.html"
+    },
+    {
+      "label": "Services",
+      "href": "/services.html"
+    },
+    {
+      "label": "Study abroad",
+      "href": "/education.html"
+    },
+    {
+      "label": "Insights",
+      "href": "/insights.html"
+    }
+  ],
+  "serviceLinks": [
+    {
+      "label": "All services",
+      "href": "/services.html"
+    },
+    {
+      "label": "Research & advisory",
+      "href": "/consulting.html"
+    },
+    {
+      "label": "Research training",
+      "href": "/training.html"
+    },
+    {
+      "label": "International student recruitment",
+      "href": "/international-education.html"
+    }
+  ],
+  "footerGroups": [
+    {
+      "title": "Company",
+      "links": [
+        {
+          "label": "About us",
+          "href": "/about.html"
+        },
+        {
+          "label": "Insights",
+          "href": "/insights.html"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact.html#contact-form"
+        }
+      ]
+    },
+    {
+      "title": "Services",
+      "links": [
+        {
+          "label": "All services",
+          "href": "/services.html"
+        },
+        {
+          "label": "Research & advisory",
+          "href": "/consulting.html"
+        },
+        {
+          "label": "Research training",
+          "href": "/training.html"
+        },
+        {
+          "label": "Student recruitment",
+          "href": "/international-education.html"
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "links": [
+        {
+          "label": "Find a university",
+          "href": "/education.html"
+        },
+        {
+          "label": "For universities",
+          "href": "/international-education.html#university-partnerships"
+        },
+        {
+          "label": "Talk to an advisor",
+          "href": "/contact.html?route=student#contact-form"
+        }
+      ]
+    }
+  ]
+}
